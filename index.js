@@ -11,21 +11,64 @@ app.get("/hello-world", (req, res) => {
     res.send("Hello...");
   });
   
-app.get("/Name", (req, res) => {
+app.get("/name", (req, res) => {
     res.send(`
       <html>
         <head>
           <link rel="stylesheet" type="text/css" href="/style.css">
         </head>
         <body>
-          <div class="name">Pajongsak <br> Wirithpon</div>
+          <h1>
+            <div>Pajongsak</div>
+            <div>Wirithpon</div>
+          </h1>
         </body>
       </html>
     `);
   });
 
-  app.get("/Day", (req, res) => {
-    res.send("ดีง้าบบบ วันศุกร์...");
+app.get("/Day", (req, res) => {
+    res.send(`
+        <html>
+          <head>
+            <link rel="stylesheet" type="text/css" href="/style.css">
+          </head>
+          <body>
+            <h1>
+              <div>ดีง้าบบบวันศุกร์น้าาา อยากกลับบ้านน ขับรถ 100+โล</div>
+            </h1>
+          </body>
+        </html>
+      `);
+    });
+
+app.get("/dashboard", (req, res) => {
+    res.send(`
+      <html>
+        <head>
+          <link rel="stylesheet" type="text/css" href="/style.css">
+        </head>
+        <body class="dashboard">
+          <header>
+            <h1>Dashboard</h1>
+          </header>
+          <main>
+            <section class="card">
+              <h2>ชื่อ</h2>
+              <p>Pajongsak.</p>
+            </section>
+            <section class="card">
+              <h2>ชื่อ</h2>
+              <p>Wirithpon</p>
+            </section>
+            <section class="card">
+              <h2>Card 3</h2>
+              <p>Content for card 3.</p>
+            </section>
+          </main>
+        </body>
+      </html>
+    `);
   });
   
 app.listen(port, () => {
