@@ -21,6 +21,8 @@ app.get("/name", (req, res) => {
           <h1>
             <div>Pajongsak</div>
             <div>Wirithpon</div>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/Day">Day</a>
           </h1>
         </body>
       </html>
