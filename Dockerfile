@@ -7,6 +7,7 @@ COPY package.json ./
 RUN npm install
 
 COPY index.js ./
+COPY public ./public
 
 EXPOSE 8000
 

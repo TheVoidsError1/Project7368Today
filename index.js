@@ -57,11 +57,11 @@ app.get("/dashboard", (req, res) => {
           <main>
             <section class="card">
               <h2>ชื่อ</h2>
-              <p>Pajongsak.</p>
+              <p>ผจงศักดิ์ มีกว้าน 6504305001333.</p>
             </section>
             <section class="card">
               <h2>ชื่อ</h2>
-              <p>Wirithpon</p>
+              <p>วิริทธิ์พล นวลชาวนา 6504305001307</p>
             </section>
             <section class="card">
               <h2>Card 3</h2>
